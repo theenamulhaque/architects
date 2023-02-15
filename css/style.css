@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnOne {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #727272;
+    background-color: #FF900E;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+    border: 1px solid #FF900E;
+}
+
+.btnOne:hover {
+    background-color: #fff;
+    border: 1px solid #FF900E;
+    color: #FF900E;
+    transition: 0.2s ease-in-out;
+}
+
+.titlePartColorOne {
+    color: #727272;
+}
+
+.titlePartColorTwo {
+    color: #FF900E;
+}
+
+/* ========================================== */
+
+.headerBg {
+    background-color: #FFF4E7;
+}
+
+/* navber code start */
+.navber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.navber .leftLogo h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.navber .menuItem a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* navber code end */
+
+/* banner code start */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.banner h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #131313;
+    line-height: 75px;
+    margin-top: 115px;
+    margin-bottom: 45px;
+}
+
+.banner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+
+/* banner code end */
+
+/* mainIamge code start */
+
+.mainImage {
+    padding: 50px 8%;
+    background-color: #FFF4E7;
+}
+.mainImage img{
+    width: 100%;
+}
+/* mainImage code end */
+
+/* quickList code start */
+.quickList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.quickList .leftImageGridBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quickList .leftImageGridBox img {
+    width: 100%;
+}
+
+.quickList .rightTextBox {
+    padding: 0 10px 0 40px;
+    flex: 5;
+}
+
+.quickList .rightTextBox h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.quickList .rightTextBox p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 40px;
+}
+/* quickList code end */
+
+
+
+
+
+/* ----------------------
+RESPONSIVE CODE START HERE
+-------------------------------*/
+
+@media (max-width: 602px) {
+  
+    /* nav code */
+    .navber {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid #131313;
+        padding: 20px ;
+    }
+
+    .navber .menuItem {
+        margin-top: 20px;
+    }
+
+    .navber .menuItem a {
+        margin-left: 0px;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 10px 12px;
+        background-color: #eeeeee;
+        border-radius: 20px;
+    }
+
+    /* banner code */
+
+    .banner {
+        padding: 0 50px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .banner p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .banner a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: #727272;
+        background-color: #FF900E;
+        color: #fff;
+        padding: 14px 20px;
+    }
+
+    /* quickList code */
+    .quickList {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 8%;
+        text-align: center;
+    }
+
+    .quickList .leftImageGridBox {
+       margin-bottom: 60px;
+    }
+    
+  }
+
