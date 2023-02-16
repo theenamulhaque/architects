@@ -55,7 +55,7 @@
 
 .navber .menuItem a {
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 14px;
     font-weight: 600;
 }
@@ -199,8 +199,21 @@
 
 .featureRightimageBox .featureButton button {
     background-color:#FF900E;
-    border: none;
+    border: 2px solid #ff8800;
     border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.featureRightimageBox .featureButton button:hover {
+    background-color:transparent;
+    border: 2px solid #ff8800;
+    color: #ff8800;
+    transition: 0.3s ease-in-out;
+}
+
+.featureRightimageBox .featureButton button a:hover {
+    color: #ff8800;
+    transition: 0.3s ease-in-out;
 }
 
 .featureRightimageBox .featureButton button a {
@@ -297,10 +310,78 @@
 }
 /* sponsor code end */
 
+/* subscribe code start */
+.subscribe {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 15% 8%;
+    margin-top: 10%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.437);
+    z-index: 0;
+}
+
+.subTextBox {
+    z-index: 1;
+    position: inherit;
+}
+
+.subTextBox h2 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.subscribeForm input[type="email"] {
+    width: 20%;
+    height: 30px;
+    border: none;
+    padding: 5px 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.subscribeForm input[type="button"] {
+    width: 10%;
+    padding: 10px 20px;
+    border: none;
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    background-color: #FF900E;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.subscribeForm input[type="button"]:hover {
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* subscribe code end */
+
 /* footer code start */
 
 .footer {
-    padding: 50px 8%;
+    padding: 10% 8% 5% 8%;
 }
 
 .footerSection{
@@ -343,6 +424,7 @@ RESPONSIVE CODE START HERE
         padding: 10px 12px;
         background-color: #eeeeee;
         border-radius: 20px;
+        margin-top: 60px !important;
     }
 
     /* banner code */
@@ -438,6 +520,27 @@ RESPONSIVE CODE START HERE
         text-align: center;
     }
 
+    /* subscribe code */
+
+    .subscribeForm input[type="email"] {
+        width: 40%;
+        height: 25px;
+        border: none;
+        padding: 5px 5px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .subscribeForm input[type="button"] {
+        width: 20% !important;
+        padding: 10px 0px !important;
+        border: none;
+        border: 1px solid #FF900E;
+        font-size: 10px;
+    }
+
     /* sponsor code */
 
     .sponsore .sponsoreLogoGrid {
@@ -450,6 +553,18 @@ RESPONSIVE CODE START HERE
     .sponsore .sponsoreLogoGrid .logoBox img{
         width: 60%;
     }
+
+    .subscribeForm input[type="button"] {
+    width: 10%;
+    padding: 10px 20px;
+    border: none;
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    background-color: #FF900E;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
     
   }
 
