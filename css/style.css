@@ -214,6 +214,51 @@
 }
 /* feature code end */
 
+/* fact code start */
+
+.fact {
+    padding: 50px 8%;
+}
+
+.fact .factTitleBox h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.fact .factTitleBox p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 40px;
+}
+
+.fact .factIconGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.fact .factIconGrid .iconBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 40px 20px;
+}
+
+.fact .factIconGrid .iconBox h5{
+    font-size: 17px;
+    font-weight: 600;
+    color: #727272;
+}
+/* fact code end */
+
 
 
 
@@ -311,6 +356,29 @@ RESPONSIVE CODE START HERE
         position: relative;
         right: 0px;
         top: 10px;
+    }
+
+    /* Fact code */
+
+    .fact .factIconGrid {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .fact .factIconGrid .iconBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FF900E;
+        border-radius: 8px;
+        padding: 40px 40%;
+        margin-top: 20px;
+    }
+
+    .fact .factIconGrid .iconBox h5{
+        text-align: center;
     }
     
   }
