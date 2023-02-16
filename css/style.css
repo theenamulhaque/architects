@@ -141,6 +141,79 @@
 }
 /* quickList code end */
 
+/* feature code start */
+.feature {
+    padding: 50px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.featureLeftTextBox {
+    flex: 1.2;
+    margin-right: 70px;
+}
+
+.feature .featureLeftTextBox .featureLeftTextBoxInner h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.feature .featureLeftTextBox .featureLeftTextBoxInner p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 40px;
+}
+
+.feature .featureLeftTextBox .featureLeftTextBoxInner .featureLeftTextBoxInnerBox {
+    padding: 25px 20px;
+    box-shadow: 10px 10px 55px -8px rgba(163, 163, 163, 0.23);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.feature .featureLeftTextBox .featureLeftTextBoxInner .featureLeftTextBoxInnerBox p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.featureRightimageBox {
+    flex: 1;
+}
+
+.featureRightimageBox img {
+    width: 100%;
+}
+
+.featureButton {
+    position: relative;
+    right: 40px;
+    top: -80px;
+}
+
+.featureRightimageBox .featureButton button {
+    background-color:#FF900E;
+    border: none;
+    border-radius: 5px;
+}
+
+.featureRightimageBox .featureButton button a {
+    padding: 40px 180px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.featureRightimageBox .featureButton button a h1 {
+    font-size: 30px;
+}
+/* feature code end */
+
 
 
 
@@ -210,6 +283,34 @@ RESPONSIVE CODE START HERE
 
     .quickList .leftImageGridBox {
        margin-bottom: 60px;
+    }
+
+    /* feature code */
+    .feature {
+        padding: 50px 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .feature .featureLeftTextBox .featureLeftTextBoxInner p{
+        margin-top: 10px;
+    }
+
+    .featureLeftTextBox {
+        flex: 1;
+        margin-right: 0px;
+    }
+
+    .featureRightimageBox {
+        margin-top: 20px;
+    }
+
+    .featureButton {
+        position: relative;
+        right: 0px;
+        top: 10px;
     }
     
   }
